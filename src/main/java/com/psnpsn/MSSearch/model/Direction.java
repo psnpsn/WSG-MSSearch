@@ -24,11 +24,11 @@ public class Direction {
     
     @ManyToOne
     @JoinColumn(name="idA")
-    private Airport pointA;
+    private Airport airport;
     
     @ManyToOne
     @JoinColumn(name="idB")
-    private Town pointB;
+    private Town town;
     
     private int distance;
     private int prixAdult;
@@ -38,9 +38,9 @@ public class Direction {
     public Direction() {
     }
 
-    public Direction(Airport pointA, Town pointB, int distance, int prixAdult, int prixEnfant, int prixBebe) {
-        this.pointA = pointA;
-        this.pointB = pointB;
+    public Direction(Airport airport, Town town, int distance, int prixAdult, int prixEnfant, int prixBebe) {
+        this.airport = airport;
+        this.town = town;
         this.distance = distance;
         this.prixAdult = prixAdult;
         this.prixEnfant = prixEnfant;
@@ -56,19 +56,19 @@ public class Direction {
     }
 
     public Airport getPointA() {
-        return pointA;
+        return airport;
     }
 
-    public void setPointA(Airport pointA) {
-        this.pointA = pointA;
+    public void setPointA(Airport airport) {
+        this.airport = airport;
     }
 
     public Town getPointB() {
-        return pointB;
+        return town;
     }
 
-    public void setPointB(Town pointB) {
-        this.pointB = pointB;
+    public void setPointB(Town town) {
+        this.town = town;
     }
 
     public int getDistance() {

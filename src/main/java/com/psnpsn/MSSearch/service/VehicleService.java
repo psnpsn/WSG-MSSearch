@@ -5,8 +5,10 @@
  */
 package com.psnpsn.MSSearch.service;
 
+import com.psnpsn.MSSearch.dao.VehicleCategorieDAO;
 import com.psnpsn.MSSearch.dao.VehicleDAO;
 import com.psnpsn.MSSearch.model.Vehicle;
+import com.psnpsn.MSSearch.model.VehicleCategorie;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,35 +19,21 @@ import org.springframework.stereotype.Service;
  */
 @Service 
 public class VehicleService {
-    @Autowired
-    VehicleDAO vDao;
     
-
-  public Vehicle save(Vehicle vehicle)
-    { 
-      return vDao.saveAndFlush(vehicle);
+    @Autowired
+    VehicleDAO vehicleDAO;
+    
+    @Autowired
+    VehicleCategorieDAO categorieDAO;
+    
+    public List<VehicleCategorie> getAll(){
+        return categorieDAO.findAll();
     }
-  public Vehicle update(Vehicle vehicle)
-  
-  {
-     return vDao.save(vehicle);
-  }
-  
-  public Vehicle find(int immatricule) {
-        return vDao.findOneByImmatricule(immatricule);
-  
-  }
-  public Vehicle find(Long id_vehicle) {
-	return vDao.findById(id_vehicle).get();
+    
+    public int count(int id){
+        return vehicleDAO.countVehiclesByCategorie(id);
     }
-  
-  public List<Vehicle> findAll ()
-  {
-      return vDao.findAll();
-  }
-  
-  public boolean delete(Long id_vehicle)
-  {
-    return true;
-  }
+    
+    
+    
 }

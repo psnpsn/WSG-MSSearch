@@ -9,6 +9,9 @@ package com.psnpsn.MSSearch.model;
  *
  * @author Guqnn
  */
-public class SearchQuery {
+public class SearchResult {
+    
+    private VehicleCategorie categorie;
+    private long prix;
     
 }

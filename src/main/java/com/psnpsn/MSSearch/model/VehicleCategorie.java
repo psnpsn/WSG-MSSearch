@@ -18,7 +18,6 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="VehicleCategorie")
-
 public class VehicleCategorie implements Serializable {
   
     @Id

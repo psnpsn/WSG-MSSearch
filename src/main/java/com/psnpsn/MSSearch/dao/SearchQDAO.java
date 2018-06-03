@@ -5,7 +5,7 @@
  */
 package com.psnpsn.MSSearch.dao;
 
-import com.psnpsn.MSSearch.model.Airport;
+import com.psnpsn.MSSearch.model.SearchQ;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,8 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author Guqnn
  */
 @Repository
-public interface AirportDAO extends JpaRepository<Airport, Long> {
-    
-    public Airport findByCode(String code);
+public interface SearchQDAO extends JpaRepository<SearchQ, Long> {
     
 }
