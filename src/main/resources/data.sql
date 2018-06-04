@@ -77,5 +77,25 @@ INSERT INTO Direction VALUES (19,10,20,10,10,'ALG',16);
 INSERT INTO Direction VALUES (20,10,20,10,10,'ALG',17);
 INSERT INTO Direction VALUES (21,10,20,10,10,'ALG',18);
 INSERT INTO Direction VALUES (22,10,20,10,10,'ALG',19);
+
+INSERT INTO Vehicle_Categorie VALUES (1,3,3,1,'Private Transfer');
+INSERT INTO Vehicle_Categorie VALUES (2,1,50,1,'Shuttle');
+INSERT INTO Vehicle_Categorie VALUES (3,1,2,1,'Luxury');
+
+INSERT INTO Vehicle VALUES (1,'a@v','2332323','BMW',1);
+INSERT INTO Vehicle VALUES (2,'a@v','2332323','BMW',1);
+INSERT INTO Vehicle VALUES (3,'a@v','2332323','BMW',1);
+INSERT INTO Vehicle VALUES (4,'a@v','2332323','BMW',1);
+INSERT INTO Vehicle VALUES (5,'a@v','2332323','BMW',1);
+INSERT INTO Vehicle VALUES (6,'a@v','2332323','BMW',1);
+INSERT INTO Vehicle VALUES (7,'a@v','2332323','BMW',1);
+INSERT INTO Vehicle VALUES (8,'a@v','2332323','Peugeot',2);
+INSERT INTO Vehicle VALUES (9,'a@v','2332323','Peugeot',2);
+INSERT INTO Vehicle VALUES (10,'a@v','2332323','Peugeot',2);
+INSERT INTO Vehicle VALUES (11,'a@v','2332323','Peugeot',2);
+INSERT INTO Vehicle VALUES (12,'a@v','2332323','Peugeot',2);
+INSERT INTO Vehicle VALUES (13,'a@v','2332323','Peugeot',2);
+INSERT INTO Vehicle VALUES (14,'a@v','2332323','Peugeot',2);
+INSERT INTO Vehicle VALUES (15,'a@v','2332323','Peugeot',2);
 commit;
 

@@ -7,6 +7,7 @@ package com.psnpsn.MSSearch.service;
 
 import com.psnpsn.MSSearch.dao.VehicleCategorieDAO;
 import com.psnpsn.MSSearch.dao.VehicleDAO;
+import com.psnpsn.MSSearch.model.SearchQ;
 import com.psnpsn.MSSearch.model.Vehicle;
 import com.psnpsn.MSSearch.model.VehicleCategorie;
 import java.util.List;
@@ -31,6 +32,8 @@ public class VehicleService {
     }
     
     public int count(int id){
+        int count = vehicleDAO.countVehiclesByCategorie(id);
+        System.out.println("Count method: " + count);
         return vehicleDAO.countVehiclesByCategorie(id);
     }
     

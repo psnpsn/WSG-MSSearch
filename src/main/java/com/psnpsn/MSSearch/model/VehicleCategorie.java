@@ -22,7 +22,7 @@ public class VehicleCategorie implements Serializable {
   
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private long   id_categorie;
+    private long   idCategorie;
     private String type;
     private int    min_passengers;
     private int    max_passengers;
@@ -37,6 +37,15 @@ public class VehicleCategorie implements Serializable {
         this.max_passengers = Max_passengers;
         this.max_luggage = Max_luggage;
     }
+
+    public long getIdCategorie() {
+        return idCategorie;
+    }
+
+    public void setIdCategorie(long idCategorie) {
+        this.idCategorie = idCategorie;
+    }
+
 
     public String getType() {
         return type;

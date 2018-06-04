@@ -127,6 +127,9 @@ public class SearchQ {
         this.clientUsername = clientUsername;
     }
     
+    public int persons(){
+        return this.adult+this.children+this.infant;
+    }
     
     
 }

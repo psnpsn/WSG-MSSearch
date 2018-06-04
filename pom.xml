@@ -73,8 +73,8 @@
                         <includes>
                             <include>application.properties</include>
                         </includes>
-                </resource>
-        </resources>   
+                    </resource>
+                 </resources>   
 	</build>
 
 

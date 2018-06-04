@@ -20,6 +20,6 @@ public interface VehicleDAO extends JpaRepository<Vehicle, Long>{
     
     public Vehicle findOneByImmatricule(int immatricule);
     
-    @Query("SELECT COUNT(n) FROM Vehicle WHERE id_categorie=:c")
+    @Query("SELECT COUNT(id_vehicle) FROM Vehicle WHERE id_categorie=:c")
     public int countVehiclesByCategorie(@Param("c") int c);
 }
